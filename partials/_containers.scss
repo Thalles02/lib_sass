@@ -1,37 +1,35 @@
-// Layout of project 
-
-// Container devices 
+// Resoluções para os containers
 $container-xl: 1440px;
 $container-l: 1140px;
 $container-m: 960px;
 $container-s: 540px;
 
-$card-box-shadow: 0px 17px 17px rgba(84, 76, 87, 0.08), 0px 5.125px 5.125px rgba(84, 76, 87, 0.08), 0px 2.12866px 2.12866px rgba(84, 76, 87, 0.08), 0px 0.769896px 0.769896px rgba(84, 76, 87, 0.08);
+$card-box-shadow: 0px 17px 17px rgba(44, 38, 44, 0.08), 0px 5.125px 5.125px rgba(44, 38, 44, 0.08), 0px 2.12866px 2.12866px rgba(44, 38, 44, 0.08), 0px 0.769896px 0.769896px rgba(44, 38, 44, 0.08);
 
-// Mixin of media-queries
+// Responsividade
 @mixin responsive($device) {
     @if $device == xl {
-      // For resolutions upper 1440px
+      // Para resoluções acima à 1440px
       @media screen and (min-width: $container-xl) {
         @content;
       }
     } @else if $device == l {
-      // For resolutions between 1140px and 1440px
+      // Para resoluções entre 1140px e 1440px
       @media screen and (max-width: $container-xl) and (min-width: $container-l) {
         @content;
       }
     } @else if $device == m {
-      // For resolutions between 960px and 1440px
+      // Para resoluções entre 960px e 1440px
       @media screen and (max-width: $container-l) and (min-width: $container-s) {
         @content;
       }
     } @else if $device == s {
-      // For resolutions less than 960px
+      // Para resoluções abaixo de 960px
       @media screen and (max-width: $container-m) {
         @content;
       }
     } @else if $device == xs {
-      // For resolutions less than 540px
+      // Para resoluções abaixo de 540px
       @media screen and (max-width: $container-s) {
         @content;
       }
@@ -95,7 +93,6 @@ $card-box-shadow: 0px 17px 17px rgba(84, 76, 87, 0.08), 0px 5.125px 5.125px rgba
   flex-wrap: wrap;
 }
 
-
 // Width's
 .width-auto {
   width: auto;
@@ -111,8 +108,4 @@ $card-box-shadow: 0px 17px 17px rgba(84, 76, 87, 0.08), 0px 5.125px 5.125px rgba
 }
 .w-25 {
   width: 25%;
-}
-
-.hidden {
-  overflow: hidden;
 }

@@ -1,7 +1,7 @@
-// Typography of projects 
+// Tipografia Layout
 
 @mixin typeface-1($size, $device: desktop) {
-    font-family: 'Sora', sans-serif;
+    //font-family: "Fonte de sua preferência", sans-serif;
 
     @if $size ==h1 and $device ==desktop {
         font-size: 64px;
@@ -55,7 +55,7 @@
 }
 
 @mixin typeface-2($size: p2, $device: desktop) {
-    font-family: "Source Sans Pro", sans-serif;
+    //font-family: "Fonte de sua preferência", sans-serif;
 
     @if $size ==p1 and $device ==desktop {
         font-size: 24px;

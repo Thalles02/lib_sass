@@ -14,13 +14,3 @@
         0px 0.769896px 0.769896px rgba(44, 38, 44, 0.08);
 
 }
-
-a {
-    @include typeface-2(p2, desktop);
-    text-decoration: none;
-    color: $black-normal;
-
-    &:hover {
-        opacity: .9;
-    }
-}
